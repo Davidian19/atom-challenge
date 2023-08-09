@@ -2,7 +2,6 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import News from './news';
 import React, { useState } from 'react';
-import { searchHome } from './isSetSearch';
 
 interface HomeProps {
   isSearch?: boolean;
@@ -11,8 +10,7 @@ interface HomeProps {
 
 export default function Home({ isSearch,whoNews }: HomeProps) {
 
-
-  return (
+  return ( 
     <>
       {!isSearch ? (
         <>
@@ -32,6 +30,7 @@ export default function Home({ isSearch,whoNews }: HomeProps) {
                   width={20}
                   height={20}
                   priority
+
                 />
               </div>
             </div>
