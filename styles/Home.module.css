@@ -1,0 +1,72 @@
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-400px);
+      opacity:0;
+  }
+
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes opacityAnimation {
+  from {
+      opacity:0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+.homeMain {
+  width: 100%;
+  background-color:#290742;
+  padding: 110px 150px;
+  border: solid;
+  border-width: 0 0 6px 0;
+  border-style: solid;
+  border-color: #4FFF4B;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeMain h1{
+  color: #9E6DC2;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.homeImage {
+  animation: opacityAnimation 2.5s ease-in;
+}
+
+.homeMain h4{
+  color: #9E6DC2;
+}
+.homeMain h4:hover{
+  color: #4FFF4B;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+
+.verMais{
+  padding-top: 30px;
+  display:flex;
+  cursor:pointer;
+}
+.verMais {
+  padding-top: 30px;
+  display:flex;
+  cursor:pointer;
+}
+
+.textsDiv{
+  
+  animation: slideInLeft 1s ease-in;
+}
